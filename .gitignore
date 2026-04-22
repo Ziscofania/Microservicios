@@ -1,0 +1,81 @@
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Instalaciones Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build y dist
+dist/
+build/
+*.tsbuildinfo
+
+# IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# Dependencias y cache
+.npm
+.yarn/cache
+.yarn/install-state.gz
+.pnp
+.pnp.js
+
+# Archivos compilados
+*.js.map
+*.css.map
+
+# Archivos de test
+coverage/
+.nyc_output/
+
+# Archivos de runtime
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+
+# Archivos sensibles y secretos
+.ssh/
+*.pem
+*.key
+credentials.json
+secrets.json
+private.key
+
+# Archivos de sistema
+Thumbs.db
+.AppleDouble
+.LSOverride
+._*
+
+# Archivos de base de datos local
+*.db
+*.sqlite
+*.sqlite3
+
+# Directorio de descarga o caché local
+.cache/
+.electron-builder/
