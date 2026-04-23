@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: microservices
+    ports:
+      - "5432:5432"
+
+  gateway-service:
+    build: ./gateway-service
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - user-service
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/microservices
+      USER_SERVICE_URL: http://user-service:4000
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "4000:4000"
