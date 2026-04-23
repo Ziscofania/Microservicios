@@ -31,7 +31,7 @@ Antes de ejecutar el proyecto, debes tener instalado:
 ## Instalación
 
 ```bash
-git clone <URL_DEL_REPO>
+git clone https://github.com/Ziscofania/Microservicios.git
 cd microservicios
 ```
 Ejecutar con Docker
